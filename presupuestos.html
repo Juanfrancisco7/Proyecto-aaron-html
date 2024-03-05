@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- links para llamar archivos css y archivo externo redes sociales -->
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/style3.css" />
+    <link rel="stylesheet" href="css/style4.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>Pagina de presupuestos</title>
+  </head>
+  <body>
+    <header>
+      <div class="fondo_container">
+        <div class="texto">
+          <h1>PrimeraClaseRelojes.com</h1>
+          <p>formulario para presupuesto personalizado</p>
+        </div>
+      </div>
+    </header>
+    <!-- esta es la barra de navegacion actualizada -->
+    <div>
+      <nav>
+        <ul class="navbar">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./views/productos.html">productos </a></li>
+          <li><a href="views/contacto.html">contacto</a></li>
+          <li>
+            <a href="views/contacto.html">Presupuestos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- formulario con check box de terminos y condiciones  -->
+
+    <h1 id="titulo_formulario">Formulario de Presupuestos</h1>
+    <form action="procesar.php" method="post">
+      <!-- Cambiar "procesar.php" por el archivo que procesará el formulario -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required />
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo" required />
+
+      <label for="mas_informacion">Más Información:</label>
+      <textarea
+        id="mas_informacion"
+        name="mas_informacion"
+        rows="4"
+        cols="50"
+        required
+      ></textarea>
+
+      <input
+        type="checkbox"
+        id="aceptar-privacidad"
+        name="aceptar-privacidad"
+        required
+      />
+      <label for="aceptar-privacidad">Acepto la política de privacidad</label>
+
+      <input type="submit" value="Enviar" />
+    </form>
+    <!-- aqui el footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Ubicaccion</h4>
+            <!-- direccion requerida en footer -->
+            <h3>
+              Calle andarella <br />
+              Valencia CP: 46014
+            </h3>
+          </div>
+          <div class="footer-col">
+            <!--  iconos de redes sociales -->
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com/iniciarsesion?lang=es"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

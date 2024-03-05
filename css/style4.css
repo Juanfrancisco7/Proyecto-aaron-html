@@ -1,0 +1,15 @@
+/* hoja de estilos para los productos*/
+.container1 {
+  display: flex;
+  flex-wrap: wrap; /*  importrante permite que los elementos se pasen a la siguiente línea si no caben en el contenedor */
+}
+
+.reloj {
+  flex: 0 0 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+.reloj img {
+  max-width: 100%;
+}
